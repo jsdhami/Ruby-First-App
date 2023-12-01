@@ -1,0 +1,42 @@
+<div class="container ">
+  <p style="color: green">
+    <%= notice %>
+  </p>
+  <h1>Blogs</h1>
+
+
+  <!-- <div id="blogs" class="conainer">
+    <% @blogs.each do |blog| %>
+      <%= render blog %>
+
+        <p>
+          <%= link_to "Show this blog" , blog %>
+        </p>
+        <p>
+          <%= link_to "New blog" , new_blog_path %>
+        </p>
+
+        <% end %>
+  </div> -->
+
+
+
+
+  <div class="row row-cols-1 d-flex row-cols-md-3 g-4">
+    <div class="col">
+        <% @blogs.each do |blog| %>
+        <%= render blog %>
+    </div>
+    <% end %>
+  </div>
+
+
+
+
+
+
+
+
+
+
+</div>

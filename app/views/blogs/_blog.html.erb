@@ -1,0 +1,14 @@
+<div class="conainer">
+<div id="<%= dom_id blog %>" class="row row-cols-1 d-flex row-cols-md-3 g-4" >
+   <div class="col card" id="<%= dom_id blog %>" style="width: 18rem;">
+    <%= image_tag(blog.image_url, width: 600, class:"card-img-top") if blog.image? %>
+    <div class="card-body">
+      <h5 class="card-title"><%= blog.name %></h5>
+      <p class="card-text"><%= blog.description %></p>
+      <p><%= blog.auth %></p>
+     <%= link_to "Show this blog", blog, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
+
+</div>
